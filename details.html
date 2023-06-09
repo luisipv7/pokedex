@@ -1,0 +1,28 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/css/pokedex.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/details.css" />
+</head>
+<div>
+  <header class="">
+    <span class="back" onclick="closeModal();">&larr;</span>
+    <span class="heart" id="heart" onclick="heart();">&hearts;</span>
+  </header>
+  <section>
+    <li class="pokemon poison">
+      <span class="number">#${pokemon.number}</span>
+      <span class="name">${pokemon.name}</span>
+
+      <div class="detail" id="updateDetails">
+        <ol class="types">
+          <li class="type ${type}">${type}</li>
+        </ol>
+      </div>
+      <div style="text-align: center;">
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+        alt="${pokemon.name}"
+      />
+    </li>
+    </div>
+  </section>
+</div>
